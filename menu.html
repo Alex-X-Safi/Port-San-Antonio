@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Antonio Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="home-page">
+            <h1>Welcome to Port Antonio</h1>
+            <img src="resort-sign.jpg" alt="Resort Sign" class="resort-sign">
+            <div class="category-menu">
+                <button id="snackButton" class="category-button">Snack Menu</button>
+                <button id="restaurantButton" class="category-button">Restaurant Menu</button>
+            </div>
+        </div>
+
+        <div class="snack-menu hidden">
+            <button class="back-button">Back to Home</button>
+            <div class="category-menu">
+                <button class="category-button" data-category="Burgers">Burgers</button>
+                <button class="category-button" data-category="Pizza">Pizza</button>
+                <button class="category-button" data-category="Sandwiches">Sandwiches</button>
+                <button class="category-button" data-category="Salads">Salads</button>
+                <button class="category-button" data-category="Appetizers-Side-Items">Appetizers & Side Items</button>
+                <button class="category-button" data-category="Platters">Platters</button>
+                <button class="category-button" data-category="Drinks">Drinks</button>
+                <button id="allCategoriesButton" class="category-button">All Categories</button>
+            </div>
+
+            <div class="search-filter-container">
+                <input type="text" id="searchBar" placeholder="Search...">
+                <select id="filterSelect">
+                    <option value="default">Sort by</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+
+            <!-- Categories and Items -->
+            <div class="menu-section" data-category="Burgers">
+                <h2 class="category-title">Burgers</h2>
+                <ul>
+                    <li>Classic Hamburger - $7
+                        <p>Ingredients: Grilled beef patty, tomatoes, onions, pickles, lettuce, ketchup.</p>
+                    </li>
+                    <li>Cheese Burger - $8
+                        <p>Ingredients: Grilled beef patty, cheese, tomatoes, onions, pickles, lettuce, ketchup.</p>
+                    </li>
+                    <li>Chicken Burger - $6
+                        <p>Ingredients: Grilled chicken, lettuce, tomatoes, pickles, garlic mayo sauce.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Pizza">
+                <h2 class="category-title">Pizza</h2>
+                <ul>
+                    <li>Cheese - $7
+                        <p>Ingredients: Tomato sauce, cheese, oregano.</p>
+                    </li>
+                    <li>Cheese & Ham - $9
+                        <p>Ingredients: Tomato sauce, cheese, oregano, ham.</p>
+                    </li>
+                    <li>Pepperoni - $9
+                        <p>Ingredients: Tomato sauce, Italian sausage, oregano, cheese.</p>
+                    </li>
+                    <li>Vegetarian - $8
+                        <p>Ingredients: Green peppers, onions, corn, olives, mushrooms, oregano.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Sandwiches">
+                <h2 class="category-title">Sandwiches</h2>
+                <ul>
+                    <li>Chicken Sub - $8
+                        <p>Ingredients: Grilled chicken breast, lettuce, tomatoes, pickles, mayo sauce.</p>
+                    </li>
+                    <li>Fajita Sub - $9
+                        <p>Ingredients: Grilled chicken strips, mixed onions, peppers, guacamole spread, mixed cheese.</p>
+                    </li>
+                    <li>Tuna Sandwich - $7
+                        <p>Ingredients: Tuna mix, pickles, lettuce, corn, mayo sauce.</p>
+                    </li>
+                    <li>Hot Dog - $8
+                        <p>Ingredients: Beef hotdog, coleslaw, pickles, ketchup, mustard.</p>
+                    </li>
+                    <li>Tawouk - $6
+                        <p>Ingredients: Grilled marinated chicken breast skewers, French fries, coleslaw, pickles, garlic mayo sauce.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Salads">
+                <h2 class="category-title">Salads</h2>
+                <ul>
+                    <li>Season Salad - $7
+                        <p>Ingredients: Lettuce, tomatoes, cucumber, chopped mint, olive oil, house dressing.</p>
+                    </li>
+                    <li>Greek Salad - $9
+                        <p>Ingredients: Lettuce, feta cheese, tomatoes, cucumber, olives, green pepper, Greek dressing.</p>
+                    </li>
+                    <li>Crab Salad - $10
+                        <p>Ingredients: Shaved crab sticks, rocca, shredded carrots, lettuce, corn, olives, lemon or cocktail dressing.</p>
+                    </li>
+                    <li>Shrimp Salad - $12
+                        <p>Ingredients: Baby shrimps, lettuce, corn, carrot, cucumber, rocca, cherry tomatoes, avocado, lemon or mayo sauce.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Appetizers-Side-Items">
+                <h2 class="category-title">Appetizers & Side Items</h2>
+                <ul>
+                    <li>Chicken Nuggets - $6</li>
+                    <li>Mezze - $1</li>
+                    <li>Mezze + - $1</li>
+                    <li>French Fries Box - $4</li>
+                    <li>French Fries Plate - $5</li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Platters">
+                <h2 class="category-title">Platters</h2>
+                <ul>
+                    <li>Hamburger - $14</li>
+                    <li>Cheese Burger - $15</li>
+                    <li>Chicken Burger - $12</li>
+                    <li>Fish Burger - $14</li>
+                    <li>Tawouk - $12</li>
+                </ul>
+            </div>
+
+            <div class="menu-section" data-category="Drinks">
+                <h2 class="category-title">Drinks</h2>
+                <ul>
+                    <li>Mineral Water Large - $3</li>
+                    <li>Mineral Water Small - $1</li>
+                    <li>Perrier - $4</li>
+                    <li>Soft Drinks - $3</li>
+                    <li>Lemonade - $4</li>
+                    <li>Orange Juice - $5</li>
+                    <li>Beirut Beer (can be Mexican for free of charge) - $5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="restaurant-menu hidden">
+            <button class="back-button">Back to Home</button>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+    <div class="chatbox hidden">
+        <div class="chatbox-header">
+            <h2>Ask the Sailor Mascot</h2>
+            <button id="closeChatbox" class="close-button">X</button>
+        </div>
+        <div class="chatbox-body"></div>
+        <input type="text" id="chatInput" placeholder="Ask me anything about the menu...">
+    </div>
+
+    <div class="sailor-mascot"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

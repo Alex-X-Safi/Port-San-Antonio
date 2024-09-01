@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #89cff0, #1e90ff); /* Gradient background */
+    color: #333;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Category Menu Buttons */
+.category-button {
+    display: block;
+    width: calc(50% - 20px);
+    margin: 10px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.category-button[data-category="Burgers"] {
+    background-color: #FF7F50; /* Coral color */
+}
+
+.category-button[data-category="Pizza"] {
+    background-color: #FFD700; /* Gold color */
+}
+
+.category-button[data-category="Sandwiches"] {
+    background-color: #32CD32; /* Lime Green color */
+}
+
+.category-button[data-category="Salads"] {
+    background-color: #20B2AA; /* Light Sea Green color */
+}
+
+.category-button[data-category="Appetizers-Side-Items"] {
+    background-color: #FF8C00; /* Dark Orange color */
+}
+
+.category-button[data-category="Platters"] {
+    background-color: #BA55D3; /* Medium Orchid color */
+}
+
+.category-button[data-category="Drinks"] {
+    background-color: #1E90FF; /* Dodger Blue color */
+}
+
+.category-button:hover {
+    filter: brightness(85%); /* Hover effect */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.back-button {
+    background-color: #DC143C;
+    color: #fff;
+}
+
+/* Menu Sections */
+.menu-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f0f8ff; /* AliceBlue color for item background */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.menu-section li:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.menu-section li p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Search and Filter */
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#searchBar, #filterSelect {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 48%;
+}
+
+/* Sailor Mascot and Chatbox */
+.sailor-mascot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url('sailor-mascot.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+.chatbox-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbox-body {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+#chatInput {
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.resort-sign {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+}
